@@ -1,0 +1,116 @@
+/* --- Переменные и константы --- */
+
+:root {
+    --color-background: #f9f9f9;
+    --color-main: #ffffff;
+    --color-blue-1: #5d70dd;
+    --color-blue-2: #6C7DD8;
+    --color-blue-3: #7d8ce4;
+    --color-text: #2f2222;
+    --color-grey-1: #f5f5f5;
+    --color-grey-2: #ededed;
+    --color-shadow: #08176f;
+}
+
+/* --- Шрифты --- */
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url(../fonts/FuturaPT-Book.eot);
+    src: url(../fonts/FuturaPT-Book.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/FuturaPT-Book.otf) format('otf'),
+        url(../fonts/FuturaPT-Book.svg#FuturaPT-Book) format('svg'),
+        url(../fonts/FuturaPT-Book.ttf) format('truetype'),
+        url(../fonts/FuturaPT-Book.woff) format('woff'),
+        url(../fonts/FuturaPT-Book.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url(../fonts/FuturaPT-Medium.eot);
+    src: url(../fonts/FuturaPT-Medium.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/FuturaPT-Medium.otf) format('otf'),
+        url(../fonts/FuturaPT-Medium.svg#FuturaPT-Medium) format('svg'),
+        url(../fonts/FuturaPT-Medium.ttf) format('truetype'),
+        url(../fonts/FuturaPT-Medium.woff) format('woff'),
+        url(../fonts/FuturaPT-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* --- Обнуляющие стили --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
