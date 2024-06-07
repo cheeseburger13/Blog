@@ -1,20 +1,27 @@
 import "../styles/header.css"
 
+import { NavLink } from "react-router-dom";
+
+import Burger from "./Burger";
+
 import logo from "../images/logo.svg"
 
 const Header = () => {
     return (
-        <header className = "header">
-            <div className = "container">
-                <div className = "header__content">
-                    <img src={logo} alt="Логотип сайта" className = "header__logo" />
-                    <nav className = "header-navigation">
-                        <a className = "header-navigation__link" href="#">Главная</a>
-                        <a className = "header-navigation__link" href="#">О нас</a>
-                        <a className = "header-navigation__link" href="#">Контакты</a>
-                        <a className = "header-navigation__link" href="#">Поиск</a>
-                        <a className = "header-navigation__link" href="#">+7 (987) 887-87</a>
+        <header className="header">
+            <div className="container">
+                <div className="header__content">
+                    <NavLink to="/" className="header__logo">
+                        <img src={logo} className="header__logo-image" />
+                    </NavLink>
+                    <nav className="header-navigation">
+                        <NavLink to="/" className="header-navigation__link">Главная</NavLink>
+                        <NavLink to="/about" className="header-navigation__link">О нас</NavLink>
+                        <NavLink to="/contacts" className="header-navigation__link">Контакты</NavLink>
+                        <NavLink to="/search" className="header-navigation__link">Поиск</NavLink>
+                        <NavLink to="/contacts" className="header-navigation__link">+7 (999) 999-99-99</NavLink>
                     </nav>
+                    <Burger />
                 </div>
             </div>
         </header>

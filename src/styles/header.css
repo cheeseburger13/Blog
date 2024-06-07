@@ -39,6 +39,10 @@
     color: var(--color-blue-1);
 }
 
+.header-navigation__link:last-child:active {
+    color: var(--color-blue-3);
+}
+
 .header-navigation__link:last-child::before {
     content: "";
     position: absolute;
@@ -48,4 +52,8 @@
     background-image: url(../images/phone.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.header-navigation__link:last-child:active::before {
+    background-image: url(../images/phone-active.svg);
 }
