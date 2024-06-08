@@ -1,8 +1,8 @@
-import "../styles/search.css"
+import "../styles/search.css";
 
 const Search = () => {
     return (
-        <main className="search">search</main>
+        <main className = "search">search</main>
     );
 }
  

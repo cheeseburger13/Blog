@@ -1,9 +1,9 @@
-import "../styles/contacts.css"
+import "../styles/contacts.css";
 
 const Contacts = () => {
     return (
-        <main className="contacts">contacts</main>
+        <main className = "contacts">contacts</main>
     );
 }
  
-export default Contacts
+export default Contacts;

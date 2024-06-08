@@ -19,41 +19,12 @@
     user-select: none;
 }
 
-.header-navigation {
-    display: flex;
-    gap: 40px;
-}
-
-.header-navigation__link {
-    color: var(--color-text);
-}
-
-.header-navigation__link:hover {
-    color: var(--color-blue-1);
-    text-decoration: underline;
-}
-
-.header-navigation__link:last-child {
-    position: relative;
-    padding-left: 1em;
-    color: var(--color-blue-1);
-}
-
-.header-navigation__link:last-child:active {
-    color: var(--color-blue-3);
-}
-
-.header-navigation__link:last-child::before {
-    content: "";
-    position: absolute;
-    left: -0.25em;
-    width: 1em;
-    height: 1em;
-    background-image: url(../images/phone.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header-navigation__link:last-child:active::before {
-    background-image: url(../images/phone-active.svg);
+@media (max-width: 767px) {
+    .header {
+        height: 50px;
+    }
+    
+    .header__logo-image {
+        height: 36px;
+    }
 }

@@ -1,8 +1,8 @@
-import "../styles/main.css"
+import "../styles/main.css";
 
 const Main = () => {
     return (
-        <main className="main">main</main>
+        <main className = "main">main</main>
     );
 }
  
