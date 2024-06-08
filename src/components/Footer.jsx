@@ -14,7 +14,7 @@ const Footer = () => {
                     <img src = {logo} className = "footer__logo-image" />
                 </NavLink>
 
-                <Navigation header = {false}/>
+                <Navigation position = {"footer"}/>
 
                 <p className = "footer__rights">ООО "NTI Team" 2024. Все права защищены</p>
             </div>

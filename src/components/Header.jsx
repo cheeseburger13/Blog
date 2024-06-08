@@ -1,13 +1,16 @@
 import "../styles/header.css";
+import "../styles/burger.css";
 
 import logo from "../images/logo.svg";
 
-import Burger from "./Burger";
 import Navigation from "./Navigation";
 
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+    const [state, setState] = useState(true);
+
     return (
         <header className = "header">
             <div className = "container">
@@ -16,9 +19,13 @@ const Header = () => {
                         <img src = {logo} className = "header__logo-image" />
                     </NavLink>
                     
-                    <Navigation header = {true}/>
+                    <Navigation position = {"header"} state = {state}/>
 
-                    <Burger />
+                    <div className = {(state) ? "burger" : "burger burger--active"} onClick = {() => {setState(!state)}}>
+                        <span className = {(state) ? "burger__line" : "burger__line burger__line--active"}></span>
+                        <span className = {(state) ? "burger__line" : "burger__line burger__line--active"}></span>
+                        <span className = {(state) ? "burger__line" : "burger__line burger__line--active"}></span>
+                    </div>
                 </div>
             </div>
         </header>
